@@ -102,3 +102,28 @@ img {
 .btn:hover {
   background-color: RoyalBlue;
 }
+
+.video-wrap {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+.card-description {
+	display: block;
+	padding: 1em 0.5em;
+	color: #000000;
+	text-decoration: none;
+}
