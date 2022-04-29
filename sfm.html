@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/background.css" type="text/css">
+    <link rel="stylesheet" href="CSS/sfm.css" type="text/css">
+    <script src="https://kit.fontawesome.com/1e0ac992a7.js" crossorigin="anonymous"></script>
+
+
+</head>
+<title></title>
+  <body>
+    <!-- backgroundcolour -->
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <!-- backgroundcolour -->
+    <!-- logo -->
+      <a href="index.html">
+			<img class="logo" src="images/logo.png">
+      </a>
+      <ul class="card-list">
+    <!-- logo -->
+<!-- hamburger menu -->
+<!-- hamburger -->
+<div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home <i class="fa-solid fa-house"></i></a></li>
+                        <li><a href="#">About Me <i class="fa-solid fa-address-card"></i></a></li>
+                        <li><a href="photoshop.html">Photoshop <i class="fa-solid fa-panorama"></i></a></li>
+                        <li><a href="sfm.html">SFM <i class="fa-solid fa-gamepad"></i></a></li>
+                        <li><a href="#">Photography <i class="fa-solid fa-camera"></i></a></li>
+                        <li><a href="#">Videos <i class="fa-solid fa-film"></i></a></li>
+                        <li><a href="#">Contact <i class="fa-solid fa-address-card"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- hamburger menu -->
+<!-- photo gallery  -->
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="sfm/sfm1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="sfm/sfm2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="sfm/sfm3.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="sfm/sfm4.gif" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="sfm/sfm5.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="sfm/sfm6.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="sfm/sfm1.png" style="width:100%" onclick="currentSlide(1)" alt="Evil Sniper">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sfm/sfm2.png" style="width:100%" onclick="currentSlide(2)" alt="Evil Sniper V2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sfm/sfm3.png" style="width:100%" onclick="currentSlide(3)" alt="Evil Sniper V3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sfm/sfm4.gif" style="width:100%" onclick="currentSlide(4)" alt="Evil Sniper V3 (animated)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sfm/sfm5.png" style="width:100%" onclick="currentSlide(5)" alt="Killstreak Demo">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="sfm/sfm6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Meancing Dance">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<a href="/download/sfm.zip" download>
+<center><button class="btn"><i class="fa fa-download"></i> Download</button></center>
+</a>
+
+  <br>
+  <br>
+  <!-- footer -->
+  <footer class="footer-distributed">
+
+  			<div class="footer-right">
+
+  				<a href="https://www.youtube.com/channel/UCOipZ9pAyP6ot_wPlOjBpnw?sub_confirmation=1" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+  				<a href="https://www.instagram.com/roystekii/" target="_blank"><i class="fa-brands fa-instagram-square"></i></a>
+  				<a href="https://discord.gg/eTgNWbF" target="_blank"><i class="fa-brands fa-discord"></i></a>
+  				<a href="https://github.com/DMU-P2507515" target="_blank"><i class="fa fa-github"></i></a>
+
+
+  			</div>
+
+  			<div class="footer-left">
+
+  				<p class="footer-links">
+  					<a class="link-1" href="index.html">Home</a>
+
+            <a href="#">About</a>
+
+  					<a href="https://www.youtube.com/channel/UCOipZ9pAyP6ot_wPlOjBpnw?sub_confirmation=1" target="_blank">YouTube</a>
+
+  					<a href="https://ko-fi.com/thanosroy0830" target="_blank">Donate</a>
+
+  					<a href="#">Contact</a>
+  				</p>
+
+  				<p>SoapFilms &copy; 2022</p>
+  			</div>
+
+  		</footer>
+  </body>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+
+</script>
+</html>
