@@ -126,6 +126,7 @@ iframe {
 
 @media (max-width:768px){
   .popup-video iframe{
-    width: 95%;
+    width: 60%;
+    height: 25%;
   }
 }
