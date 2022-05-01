@@ -50,6 +50,7 @@ html, body {
 	padding: 1em 0.5em;
 	color: #000000;
 	text-decoration: none;
+	text-align: center;
 }
 
 .card-description > h2 {
