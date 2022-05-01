@@ -97,6 +97,13 @@ img {
   cursor: pointer;
   font-size: 20px;
 }
+a.btn {
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  max-width: 500px;
+  text-align: center;
+}
 
 /* Darker background on mouse-over */
 .btn:hover {
@@ -126,4 +133,5 @@ img {
 	padding: 1em 0.5em;
 	color: #000000;
 	text-decoration: none;
+  text-align: center;
 }
