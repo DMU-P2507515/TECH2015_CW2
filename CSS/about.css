@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -11,7 +10,6 @@ body {
   background: #f7f5f0;
 }
 /* Link Styles */
-
 a {
   text-decoration: none;
   color: #999;
@@ -19,9 +17,7 @@ a {
 a:hover {
   color: #6633ff;
 }
-
 /* Section Styles */
-
 header {
   text-align: center;
   background-size: cover;
