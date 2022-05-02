@@ -26,10 +26,10 @@ iframe {
 }
 
 .v-row__card {
-    background: #fff;
+    background: lightblue;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
     text-align:center;
-    border: 5px solid #fff;
+    border: 5px solid lightblue;
     border-radius: 5px;
     overflow: hidden;
     width: 600px;
