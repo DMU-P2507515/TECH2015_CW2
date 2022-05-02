@@ -102,30 +102,29 @@
 
   				<p>SoapFilms &copy; 2022</p>
   			</div>
-
   		</footer>
+      <script>
+        const cards = document.querySelectorAll('.v-row__card');
+              const popupScreen = document.querySelector('.popup-video')
+              const popupVid = popupScreen.querySelector('iframe');
+
+              cards.forEach((card) => {
+                  card.onclick = () => {
+                      const clickedVid = card.querySelector('iframe')
+                      popupScreen.style.display = 'block';
+                      popupVid.src =clickedVid.src;
+                  }
+              })
+
+              document.addEventListener('click', (e) => {
+
+                  if (e.target.className === "popup-video") {
+                      const targetVid =   e.target.querySelector('iframe');
+                      targetVid.src = targetVid.src;
+                      popupScreen.style.display = 'none'
+
+                  }
+                  })
+          </script>
   </body>
-<script>
-  const cards = document.querySelectorAll('.v-row__card');
-        const popupScreen = document.querySelector('.popup-video')
-        const popupVid = popupScreen.querySelector('iframe');
-
-        cards.forEach((card) => {
-            card.onclick = () => {
-                const clickedVid = card.querySelector('iframe')
-                popupScreen.style.display = 'block';
-                popupVid.src =clickedVid.src;
-            }
-        })
-
-        document.addEventListener('click', (e) => {
-
-            if (e.target.className === "popup-video") {
-                const targetVid =   e.target.querySelector('iframe');
-                targetVid.src = targetVid.src;
-                popupScreen.style.display = 'none'
-
-            }
-            })
-    </script>
 </html>

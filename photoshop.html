@@ -185,56 +185,55 @@
 
   				<p>SoapFilms &copy; 2022</p>
   			</div>
-
   		</footer>
-  </body>
-  <!-- Back to top button -->
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-<script>
-  const lightbox = document.createElement('div')
-const images = document.querySelectorAll('img:not(.profile)')
-lightbox.id = 'lightbox'
-document.body.appendChild(lightbox)
+      <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+      const lightbox = document.createElement('div')
+    const images = document.querySelectorAll('img:not(.profile)')
+    lightbox.id = 'lightbox'
+    document.body.appendChild(lightbox)
 
-images.forEach(image => {
-  image.addEventListener('click', e => {
-    lightbox.classList.add('active')
-    const img = document.createElement('img')
-    img.src = image.src
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild)
+    images.forEach(image => {
+      image.addEventListener('click', e => {
+        lightbox.classList.add('active')
+        const img = document.createElement('img')
+        img.src = image.src
+        while (lightbox.firstChild) {
+          lightbox.removeChild(lightbox.firstChild)
+        }
+        lightbox.appendChild(img)
+
+        document.body.style.overflowY='hidden'
+      })
+    })
+
+    lightbox.addEventListener('click', e => {
+      if (e.target !== e.currentTarget) return
+      lightbox.classList.remove('active')
+      document.body.style.overflowY='scroll'
+    })
+    //  back on the top button
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     }
-    lightbox.appendChild(img)
 
-    document.body.style.overflowY='hidden'
-  })
-})
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
 
-lightbox.addEventListener('click', e => {
-  if (e.target !== e.currentTarget) return
-  lightbox.classList.remove('active')
-  document.body.style.overflowY='scroll'
-})
-//  back on the top button
-//Get the button
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-</script>
+    </script>
+  </body>
 </html>
